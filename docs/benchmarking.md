@@ -10,4 +10,20 @@ Ce benchmarking vise à analyser des sites web existants dans le domaine du coac
 * Stratégies de conversion (Appels à l'action - CTAs)
 
 
+## Sites Analysés (Exemples - Analyse du 20/04/2025)
+
+* **1 -** ([https://www.pourcelot-coaching.fr/](https://www.pourcelot-coaching.fr/))
+    * *Type :* Coach individuel français, spécialiste Poids du Corps / Calisthenics.
+    * *Points Clés :* Bonne mise en avant de la spécialité, FAQ structurée, design pro.
+    
+* **2 -** ([https://calimove.com/](https://calimove.com/))
+    * *Type :* Plateforme internationale de programmes Calisthenics.
+    * *Points Clés :* Présentation très claire des programmes, FAQ complète intégrée, image de marque forte.
+* **3 -** ([https://markpersonaltraining.com/](https://markpersonaltraining.com/))
+    * *Type :* Coach individuel international, design inspirant.
+    * *Points Clés :* Design très épuré/rapide (potentiel Tailwind), intégration claire de la réservation en ligne (page dédiée), navigation simple.
+
+* **4 -** ([https://www.fitnessfaqs.com/](https://www.fitnessfaqs.com/))
+    * *Type :* Coach individuel Calisthénie, entraînement poids du corps, design inspirant.
+    * *Points Clés :* Design simple, efficace, rassurant, Mise en avant de programmes selon objectifs (perte de poids, gain de force, débutants, etc.), FAQ très bien intégrée
 
