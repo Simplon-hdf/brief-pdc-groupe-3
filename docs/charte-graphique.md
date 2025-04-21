@@ -3,13 +3,13 @@
 
 La charte graphique d’un site web, à pour but de définir toutes les règles visuelles à suivre pour garantir une identité visuelle cohérente sur l’ensemble du site (et parfois même sur tous les supports de communication de la marque).
 
-## Logo : 
+## LOGO: 
 
 <img src="./img/309ef7f1eacb7dcabc51f5ceb9143206~tplv-tiktokx-cropcenter_1080_1080.jpeg" alt="Texte alternatif" width="100">
 
 ## 🎨 Palette de couleurs du site : PDC 
 
-Le site PDC utlise 4 couleurs principales pour sa conception, chacune ayant un rôle paticulier dans la création de son identité 
+Le site PDC utlise 4 couleurs  principales pour sa conception (dont 3 provenant du logo), chacune ayant un rôle paticulier dans la création de son identité visuelle e l'expérience utilisateur. La quatrième couleur sera choisit pour sa complémentarité avec la couleur pricipal du logo.
 
 | Couleur             | Rôle                                      | Code hex   |
 |---------------------|-------------------------------------------|------------|
@@ -30,12 +30,67 @@ Lien Coolors 👉 [https://coolors.co/f26a1b-1a1a1a-f6f2ed-6c8c4f](https://coolo
 
 ### Prposition 4eme couleur : n° 2 
 
+Couleur complémentaire bleue-violacée pour un contraste puissant et moderne.
 
+| Couleur             | Rôle                                             | Code hex   |
+|---------------------|--------------------------------------------------|------------|
+| 🔵 Blue violet      | Validation / icônes, badges, boutons secondaires | `#6C8C4F`  |
+
+Lien Coolors 👉 [https://coolors.co/f26a1b-1a1a1a-f6f2ed-3b4cca](https://coolors.co/f26a1b-1a1a1a-f6f2ed-3b4cca)
+
+<img src="./img/palette-couleur-du-site-PDC-2.png" alt="Texte alternatif" width="300">
 
  
+### Prposition 4eme couleur : n° 3 
+
+Vert sapin équilibré, bon pour la progression, la santé, le mental.
+
+| Couleur             | Rôle                                             | Code hex   |
+|---------------------|--------------------------------------------------|------------|
+| 🟢 Office green    | Validation / icônes, badges, boutons secondaires | `#2E7D32`  |
+
+Lien Coolors 👉 [https://coolors.co/f26a1b-1a1a1a-f6f2ed-2e7d32](https://coolors.co/f26a1b-1a1a1a-f6f2ed-2e7d32)
+
+<img src="./img/palette-couleur-du-site-PDC-3.png" alt="Texte alternatif" width="300">
 
 
+### Prposition 4eme couleur : n° 4
 
+Avec un gris bleuté très clair, pour les sites très aérés.
+
+| Couleur             | Rôle                                             | Code hex   |
+|---------------------|--------------------------------------------------|------------|
+| 🔵 Bleu Brume    | Validation / icônes, badges, boutons secondaires | `#DDEAF1`  |
+
+Lien Coolors 👉 [https://coolors.co/f26a1b-1a1a1a-f6f2ed-ddeaf1](https://coolors.co/f26a1b-1a1a1a-f6f2ed-ddeaf1)
+
+<img src="./img/palette-couleur-du-site-PDC-4.png" alt="Texte alternatif" width="300">
+
+
+### Prposition 4eme couleur : n° 5
+
+Une touche de turquoise foncé pour stimuler l'énergie et la fraîcheur.
+
+| Couleur             | Rôle                                             | Code hex   |
+|---------------------|--------------------------------------------------|------------|
+| 🔵 Turquoise Pro    | Validation / icônes, badges, boutons secondaires | `#007C91`  |
+
+Lien Coolors 👉 [https://coolors.co/f26a1b-1a1a1a-f6f2ed-007c91](https://coolors.co/f26a1b-1a1a1a-f6f2ed-007c91)
+
+<img src="./img/palette-couleur-du-site-PDC-5.png" alt="Texte alternatif" width="300">
+
+
+### Prposition 4eme couleur : n° 5
+
+Une touche de turquoise foncé pour stimuler l'énergie et la fraîcheur.
+
+| Couleur             | Rôle                                             | Code hex   |
+|---------------------|--------------------------------------------------|------------|
+| 🔵 Maya Blue    | Validation / icônes, badges, boutons secondaires | `#60BFFF`  |
+
+Lien Coolors 👉 [https://coolors.co/f26a1b-1a1a1a-f6f2ed-007c91](https://coolors.co/f26a1b-1a1a1a-f6f2ed-007c91)
+
+<img src="./img/palette-couleur-du-site-PDC-6.png" alt="Texte alternatif" width="300">
 
 ---
 
