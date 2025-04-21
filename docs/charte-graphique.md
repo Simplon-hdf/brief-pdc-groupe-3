@@ -92,31 +92,53 @@ Lien Coolors 👉 [https://coolors.co/f26a1b-1a1a1a-f6f2ed-007c91](https://coolo
 
 <img src="./img/palette-couleur-du-site-PDC-6.png" alt="Texte alternatif" width="300">
 
+
 ---
 
 
-## 🔤 Choix typographiques
+## 🔤 Choix Typographiques
 
-## 1. **Bebas Neue** (Google Fonts)  
+## 🔺 Police de Titres 
+
+Des polices avec du caractère, impact, et très lisibles, parfaites pour des titres motivants :
 - Utilisée pour : Titres, accroches, boutons  
 - Style : Majuscules, impact visuel fort  
 - Exemple : `font-title text-4xl uppercase`
 
-## 2. **Inter** (Google Fonts)  
+    1. **Bebas Neue**
+
+    2. **Anton** – Bold, compact, tout en majuscules
+
+    3. **League Spartan** – Plus large et moderne
+
+    4. **Oswald** – Droit, sérieux, adaptable
+
+
+## Police de texte standard (pragraphe)
+
+Polices très lisibles et élégantes pour les paragraphes : 
 - Utilisée pour : Textes courants, descriptions  
 - Style : Moderne, fluide, très lisible  
 - Disponible en : 300 (light), 400 (regular), 600 (semibold), 700 (bold)
 
-## 3. **(Optionnel) Poppins**  
-- Peut remplacer Inter pour un rendu plus doux et lifestyle
+    1. **Inter** 
+    2. **Roboto** – Ultra polyvalente
+    3. **Manrope** – Moderne, spacée
+    4. **Work Sans** – Plus légère, super lisible
 
----
 
-# 🧱 Recommandations Tailwind (base)
+### 🧱 Recommandations Tailwind (base) Ex : Police Bebas Neue et Inter
 
-| Élément           | Police       | Taille (ex.) | Style                |
+| Élément          | Police       | Taille (ex.) | Style                |
 |------------------|--------------|--------------|----------------------|
 | Titre principal  | Bebas Neue   | `text-5xl`   | `uppercase`          |
 | Sous-titre       | Bebas Neue   | `text-3xl`   | `uppercase`          |
 | Texte standard   | Inter        | `text-base`  | `font-light` à `font-semibold` |
 | Boutons CTA      | Bebas Neue   | `text-lg`    | `uppercase font-bold` |
+
+### Type scale police Ex : Police Bebas Neue et Inter
+
+<img src="./img/type-scale-Bebas-Neue.png" alt="Texte alternatif" width="300">
+<img src="./img/type-scale-Inter.png" alt="Texte alternatif" width="307">
+
+---
