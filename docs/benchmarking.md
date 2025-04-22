@@ -10,7 +10,7 @@ Ce benchmarking vise à analyser des sites web existants dans le domaine du coac
 * Stratégies de conversion (Appels à l'action - CTAs)
 
 
-## Sites Analysés (Exemples - Analyse du 20/04/2025)
+## Sites Analysés 
 
 * **1 -** ([https://www.pourcelot-coaching.fr/](https://www.pourcelot-coaching.fr/))
     * *Type :* Coach individuel français, spécialiste Poids du Corps / Calisthenics.
