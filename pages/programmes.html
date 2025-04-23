@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>OnlyPoidsDuCorps - Programmes</title>
+  <!-- Polices -->
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;600&display=swap" rel="stylesheet"/>
+
+  <!-- Tailwind + aspect-ratio plugin via CDN -->
+  <script src="https://cdn.tailwindcss.com?plugins=aspect-ratio"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            orange: '#F26A1B',
+            noir:   '#1A1A1A',
+            beige:  '#F6F2ED',
+            maya:   '#60BFFF'
+          },
+          fontFamily: {
+            title: ['\"Bebas Neue\"', 'sans-serif'],
+            body:  ['Inter', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-beige font-body antialiased">
+
+  <!-- Bannière full-width avec ratio 16:4 -->
+  <section class="w-full">
+    <div class="relative aspect-w-16 aspect-h-4">
+      <img
+        src="../assets/bannière-programmes-pdc.jpeg"
+        alt="Bannière des programmes PDC"
+        class="absolute inset-0 w-full h-full object-cover"
+      />
+      <div class="absolute inset-0 bg-noir/40 flex items-center justify-center">
+        <h1 class="text-white text-5xl sm:text-6xl font-title animate-bounce">Mes Programmes</h1>
+      </div>
+    </div>
+  </section>
+
+  
+
+</body>
+</html>
