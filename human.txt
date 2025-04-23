@@ -1,0 +1,9 @@
+/* Team */
+
+    Tech Lead : Zabiullah Mohammadi
+
+    developers : Amine Benfetta - Abdellah AIT Ahmed - Anastasia Sechko - Guillaume Crepin
+
+    GitHub: https://github.com/Simplon-hdf/brief-pdc-groupe-3
+
+    Location: France
