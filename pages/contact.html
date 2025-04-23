@@ -4,9 +4,14 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>OnlyPoidsDuCorps - Contacts</title>
+
+  <link rel="icon" href="./assets/favicon.ico" sizes="any">
+  <link rel="icon" href="./assets/logo.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="./assets/logo.svg">
+
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
-  <script>
+<script>
     tailwind.config = {
       theme: {
         extend: {
@@ -26,42 +31,42 @@
   </script>
 </head>
 <body>
-    <main>
+    <main class="bg-beige decoration-noir font-title">
         <form class="max-w-2xl mx-auto p-6 grid grid-cols-1 md:grid-cols-2 gap-4">
 
             <div>
               <label class="block text-sm font-medium mb-1">Nom</label>
-              <input type="text" class="w-full border rounded-lg p-2" placeholder="Nom" />
+              <input type="text" class="w-full border rounded-lg p-2 border-orange" placeholder="Nom" />
             </div>
             
             <div>
               <label class="block text-sm font-medium mb-1">Prénom</label>
-              <input type="text" class="w-full border rounded-lg p-2" placeholder="Prénom" />
+              <input type="text" class="w-full border rounded-lg p-2 border-orange" placeholder="Prénom" />
             </div>
           
             <div>
               <label class="block text-sm font-medium mb-1">E-mail</label>
-              <input type="email" class="w-full border rounded-lg p-2" placeholder="example@mail.com" />
+              <input type="email" class="w-full border rounded-lg p-2 border-orange" placeholder="example@mail.com" />
             </div>
           
             <div>
               <label class="block text-sm font-medium mb-1">Sujet</label>
-              <select class="w-full border rounded-lg p-2">
-                <option>Оption 1</option>
-                <option>Оption 2</option>
-                <option>Оption 3</option>
+              <select class="w-full border rounded-lg p-2 border-orange bg-white">
+                <option>Séance</option>
+                <option>Programme</option>
+                <option>Autre</option>
               </select>
             </div>
 
             
             <div class="md:col-span-2">
               <label class="block text-sm font-medium mb-1">Message</label>
-              <textarea class="w-full border rounded-lg p-2" rows="5" placeholder="Votre message..."></textarea>
+              <textarea class="w-full border rounded-lg p-2 border-orange" rows="5" placeholder="Votre message..."></textarea>
             </div>
           
             
             <div class="md:col-span-2 flex justify-center">
-              <button type="submit" class="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700">
+              <button type="submit" class="bg-[#60BFFF] text-[decoration-[#1A1A1A] font-title px-6 py-2 rounded-lg hover:bg-orange">
                 Envoyer
               </button>
             </div>
