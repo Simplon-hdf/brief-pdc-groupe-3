@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>OnlyPoidsDuCorps - Contacts</title>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            orange: '#F26A1B',
+            noir: '#1A1A1A',
+            beige: '#F6F2ED',
+            maya: '#60BFFF'
+          },
+          fontFamily: {
+            title: ['"Bebas Neue"', 'sans-serif'],
+            body: ['Inter', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body>
+    <main>
+        <form class="max-w-2xl mx-auto p-6 grid grid-cols-1 md:grid-cols-2 gap-4">
+
+            <div>
+              <label class="block text-sm font-medium mb-1">Nom</label>
+              <input type="text" class="w-full border rounded-lg p-2" placeholder="Nom" />
+            </div>
+            
+            <div>
+              <label class="block text-sm font-medium mb-1">Prénom</label>
+              <input type="text" class="w-full border rounded-lg p-2" placeholder="Prénom" />
+            </div>
+          
+            <div>
+              <label class="block text-sm font-medium mb-1">E-mail</label>
+              <input type="email" class="w-full border rounded-lg p-2" placeholder="example@mail.com" />
+            </div>
+          
+            <div>
+              <label class="block text-sm font-medium mb-1">Sujet</label>
+              <select class="w-full border rounded-lg p-2">
+                <option>Оption 1</option>
+                <option>Оption 2</option>
+                <option>Оption 3</option>
+              </select>
+            </div>
+
+            
+            <div class="md:col-span-2">
+              <label class="block text-sm font-medium mb-1">Message</label>
+              <textarea class="w-full border rounded-lg p-2" rows="5" placeholder="Votre message..."></textarea>
+            </div>
+          
+            
+            <div class="md:col-span-2 flex justify-center">
+              <button type="submit" class="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700">
+                Envoyer
+              </button>
+            </div>
+          </form>
+
+    </main>
+</body>
+</html>
