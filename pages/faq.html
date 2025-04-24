@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FAQ</title>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;600&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            orange: '#F26A1B',
+            noir: '#1A1A1A',
+            beige: '#F6F2ED',
+            blue: '#76D6FF',
+          }
+        }
+      }
+    };
+  </script>
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+    .bebas { font-family: 'Bebas Neue', cursive; }
+    .rotate-180 { transform: rotate(180deg); }
+  </style>
+</head>
+<body class="bg-beige text-noir"></body>
+
+<header></header>
+
+<section class="px-4 sm:px-6 py-10 max-w-4xl mx-auto flex items-center mb-10">
+<img src="/home/crepin/Desktop/brief-pdc-groupe-3/docs/img/309ef7f1eacb7dcabc51f5ceb9143206~tplv-tiktokx-cropcenter_1080_1080.jpeg" alt="Logo FAQ" class="h-12 mr-4">
+  <h1 class="bebas text-5xl uppercase">Foire aux questions</h1>
+</section>
+
+<div class="w-full px-4 sm:px-6">
+    <div class="max-w-4xl mx-auto space-y-4">
+      <div class="bg-white rounded-xl shadow">
+        <button class="w-full text-left p-6 bebas text-3xl text-orange focus:outline-none flex justify-between items-center" onclick="toggleFAQ(this)">
+          <span>Comment fonctionne mon coaching en ligne ?</span>
+          <svg class="w-6 h-6 transition-transform duration-300" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+        </button>
+        <div class="px-6 pb-4 hidden">
+          <p class="text-base font-light">Je t'accompagne à distance via des appels vidéo, des messages personnalisés et des programmes adaptés à tes objectifs personnels.</p>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-xl shadow">
+        <button class="w-full text-left p-6 bebas text-3xl text-orange focus:outline-none flex justify-between items-center" onclick="toggleFAQ(this)">
+          <span>Quels types de programmes est-ce que je propose ?</span>
+          <svg class="w-6 h-6 transition-transform duration-300" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+        </button>
+        <div class="px-6 pb-4 hidden">
+          <p class="text-base font-light">Je propose des programmes pour perdre du poids, prendre de la masse, se remettre en forme, améliorer sa santé ou booster sa performance sportive.</p>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-xl shadow">
+        <button class="w-full text-left p-6 bebas text-3xl text-orange focus:outline-none flex justify-between items-center" onclick="toggleFAQ(this)">
+          <span>À qui s’adresse mon coaching ?</span>
+          <svg class="w-6 h-6 transition-transform duration-300" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+        </button>
+        <div class="px-6 pb-4 hidden">
+          <p class="text-base font-light">J'accompagne aussi bien les débutants que les sportifs confirmés, les ados, les personnes âgées, ou encore les femmes en post-partum. Chacun a un programme sur mesure.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function toggleFAQ(button) {
+      const content = button.nextElementSibling;
+      const icon = button.querySelector('svg');
+      content.classList.toggle('hidden');
+      icon.classList.toggle('rotate-180');
+    }
+  </script>
+  
+  <footer></footer>
+  
+  </body>
+  </html>
