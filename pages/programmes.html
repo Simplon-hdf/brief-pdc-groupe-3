@@ -76,7 +76,29 @@
         </button>
       </div>
   
-
+    </div>
+  
+    <!-- MENU MOBILE (absolu, full-width, caché par défaut) -->
+    <nav
+      id="mobile-menu"
+      class="absolute top-full left-0 right-0 hidden bg-beige shadow-md"
+    >
+      <a href="#" class="block px-4 py-3 font-semibold">Accueil</a>
+      <a href="#" class="block px-4 py-3 font-semibold">Programmes</a>
+      <a href="#" class="block px-4 py-3 font-semibold">À-propos</a>
+      <a href="#" class="block px-4 py-3 font-semibold">Contact</a>
+      <a href="#" class="block mx-4 my-3 bg-orange text-white font-title uppercase text-center py-3 rounded hover:bg-maya">
+        Réserve ta séance
+      </a>
+    </nav>
+  
+    <script>
+      const burgerBtn = document.getElementById('burger-btn');
+      const mobileMenu = document.getElementById('mobile-menu');
+      burgerBtn.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+      });
+    </script>
   </header>
   
   
