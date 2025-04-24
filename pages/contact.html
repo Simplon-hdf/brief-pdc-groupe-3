@@ -48,19 +48,27 @@
         <a href="./pages/contact.html" class="block md:inline-block hover:text-orange hover:scale-110 transition-transform duration-300 px-4">Contact</a>
         <a href="./pages/réservation.html" class="md:hidden bg-orange text-white font-title text-xl uppercase px-4 py-3 sm:px-2 md:px-1 
         rounded hover:bg-maya hover:scale-110 transition-transform duration-300 mt-4"></a>
-        Réserve ta séance
+       <!--Réserve ta séance--> 
       </a>
     </nav>
-[10:02]
 <div class="hidden md:flex items-center">
-      <a href="#" class="bg-orange text-white font-title text-xl sm:text-1xl md:text-2xl lg:text-2xl first-letter:uppercase px-4 py-3 sm:px-2 md:px-1 rounded hover:bg-maya transition hover:scale-110 transition-transform duration-300">
+      <a href="#" class="bg-orange text-white font-title text-xl sm:text-1xl md:text-2xl lg:text-2xl first-letter:uppercase px-4 py-3 sm:px-2 md:px-1 
+      rounded hover:bg-maya transition hover:scale-110 transition-transform duration-300">
         Réserve ta séance
       </a>
     </div>
-    
+    <div class="md:hidden flex items-center">
+      <button id="burger-btn" class="text-noir focus:outline-none">
+        <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+        </svg>
+      </button>
+    </div>
   </div>
 </header>
+
 <body>
+
     <main class="bg-beige decoration-noir font-title">
         <form class="max-w-2xl mx-auto p-6 grid grid-cols-1 md:grid-cols-2 gap-4">
 
@@ -96,7 +104,7 @@
           
             
             <div class="md:col-span-2 flex justify-center">
-              <button type="submit" class="bg-orange text-[decoration-[#1A1A1A] font-title px-6 py-2 rounded-lg hover:bg-maya">
+              <button type="submit" class="bg-orange text-white font-title px-6 py-2 rounded hover:bg-maya">
                 Envoyer
               </button>
             </div>
