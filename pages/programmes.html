@@ -30,6 +30,79 @@
   </script>
 </head>
 <body class="bg-beige font-body antialiased">
+  <!-- Header -->
+  <header class="w-full bg-beige border-b border-noir/70 sticky top-0 z-50">
+    <!-- Wrapper principal, sans padding horizontal pour coller au bord -->
+    <div class="flex items-center justify-between py-4">
+  
+      <!-- LOGO -->
+      <a href="#" class="flex-shrink-0 pl-8">
+        <img src="/assets/logo.svg"
+             alt="Logo"
+             class="h-15 w-20 object-cover" />
+      </a>
+  
+      <!-- NAV DESKTOP (centrée) -->
+      <nav
+        id="desktop-menu"
+        class="hidden md:flex flex-1 justify-center space-x-14 text-xl"
+      >
+        <a href="#" class="hover:text-orange hover:scale-110 transition-transform duration-300 px-4">Accueil</a>
+        <a href="#" class="hover:text-orange hover:scale-110 transition-transform duration-300 px-4">Programmes</a>
+        <a href="#" class="hover:text-orange hover:scale-110 transition-transform duration-300 px-4">À-propos</a>
+        <a href="#" class="hover:text-orange hover:scale-110 transition-transform duration-300 px-4">Contact</a>
+      </nav>
+  
+      <!-- BOUTON & BURGER -->
+      <div class="flex items-center">
+        <!-- Bouton desktop -->
+        <div class="hidden md:block flex-shrink-0 pr-8">
+          <a href="#"
+             class="bg-orange text-white font-title text-xl uppercase px-4 py-3 rounded hover:bg-maya hover:scale-110 transition">
+            Réserve ta séance
+          </a>
+        </div>
+  
+        <!-- Burger mobile -->
+        <button
+          id="burger-btn"
+          class="md:hidden flex-shrink-0 pr-4 text-noir focus:outline-none"
+        >
+          <!-- Ton SVG ici -->
+          <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M4 6h16M4 12h16m-7 6h7" />
+          </svg>
+        </button>
+      </div>
+  
+    </div>
+  
+    <!-- MENU MOBILE (absolu, full-width, caché par défaut) -->
+    <nav
+      id="mobile-menu"
+      class="absolute top-full left-0 right-0 hidden bg-beige shadow-md"
+    >
+      <a href="#" class="block px-4 py-3 font-semibold">Accueil</a>
+      <a href="#" class="block px-4 py-3 font-semibold">Programmes</a>
+      <a href="#" class="block px-4 py-3 font-semibold">À-propos</a>
+      <a href="#" class="block px-4 py-3 font-semibold">Contact</a>
+      <a href="#" class="block mx-4 my-3 bg-orange text-white font-title uppercase text-center py-3 rounded hover:bg-maya">
+        Réserve ta séance
+      </a>
+    </nav>
+  
+    <script>
+      const burgerBtn = document.getElementById('burger-btn');
+      const mobileMenu = document.getElementById('mobile-menu');
+      burgerBtn.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+      });
+    </script>
+  </header>
+  
+  
+  
 
   <!-- Bannière full-width avec ratio 16:4 -->
   <section class="w-full">
@@ -139,6 +212,58 @@
 
     </div>
   </section>
+<!-- Footer -->
+<footer class="bg-noir text-white pt-12 pb-6 mt-20">
+  <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-8 text-sm">
 
+    <!-- Bloc 1 -->
+    <div>
+      <img src="./brief-pdc-groupe-3/assets/pdc-logo.png" alt="Logo" class="h-40 w-40 object-cover mb-4">
+    </div>
+
+    <!-- Bloc 2 : Navigation -->
+    <div>
+      <h4 class="font-title text-lg uppercase text-orange mb-4">Navigation</h4>
+      <ul class="space-y-2 text-gray-400">
+        <li><a href="#" class="hover:text-orange">Programmes</a></li>
+        <li><a href="#" class="hover:text-orange">Réservation</a></li>
+        <li><a href="#" class="hover:text-orange">À propos</a></li>
+      </ul>
+    </div>
+
+    <!-- Bloc 3 : Réseaux sociaux -->
+    <div>
+      <h4 class="font-title text-lg uppercase text-orange mb-4">Suis-moi</h4>
+      <div class="flex space-x-4 text-gray-400 text-xl">
+        <a href="#" class="hover:text-orange">TikTok</i></a>
+        <a href="#" class="hover:text-orange">Instagram</i></a>
+        <a href="#" class="hover:text-orange">YouTube</i></a>
+      </div>
+      <p class="text-gray-400 mt-4">Email : contact@toncoach.com</p>
+    </div>
+    <!-- Bloc 4 : Liens utiles -->
+    <div>
+      <h4 class="font-title text-lg uppercase text-orange mb-4">Liens utiles</h4>
+      <ul class="space-y-2 text-gray-400">
+        <li><a href="#" class="hover:text-orange">Contact</a></li>
+        <li><a href="#" class="hover:text-orange">FAQ</a></li>
+      </ul>
+    </div>
+
+  </div>
+
+  <div class="mt-8 border-t border-gray-700 pt-4 text-xs text-gray-500">
+    <div class="flex flex-col sm:flex-row justify-between items-center gap-4 text-center sm:text-left px-4">
+
+      <p>&copy; 2025 OnlyPoidsDuCorps. Tous droits réservés.</p>
+
+      <ul class="flex flex-wrap justify-center sm:justify-end gap-4">
+        <li><a href="#" class="hover:text-orange">CGV</a></li>
+        <li><a href="#" class="hover:text-orange">Politique de confidentialité</a></li>
+        <li><a href="#" class="hover:text-orange">Mentions légales</a></li>
+      </ul>
+
+    </div>
+</footer>
 </body>
 </html>
