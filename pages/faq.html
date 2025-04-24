@@ -68,3 +68,17 @@
       </div>
     </div>
   </div>
+
+  <script>
+    function toggleFAQ(button) {
+      const content = button.nextElementSibling;
+      const icon = button.querySelector('svg');
+      content.classList.toggle('hidden');
+      icon.classList.toggle('rotate-180');
+    }
+  </script>
+  
+  <footer></footer>
+  
+  </body>
+  </html>
