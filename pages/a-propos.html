@@ -26,66 +26,149 @@
   </script>
   <script src="https://kit.fontawesome.com/726db68cd1.js" crossorigin="anonymous"></script>
 </head>
-<body>
-  
-<header></header>
-<main>
-<section class="flex flex-col md:flex-row bg-[#F6F2ED] p-10 items-center">
-  <img src="/assets/logo.jpeg" alt="Coach" class="rounded-xl">
-  <div class="ml-8 space-y-4">
-    <h1 class="bebas text-5xl uppercase">Qui suis-je ?</h1>
-    <p class="text-base font-light">Je propose des programmes d'entraînement pour tous les niveaux : perte de poids, prise de masse, remise en forme et performance sportive. Je m'engage à accompagner chaque client de manière personnalisée, quel que soit son profil.</p>
-    <p class="text-base font-light">Mes coachings sont disponibles en ligne, accessibles à tous, où que vous soyez. Mes packs incluent :</p>
-    <ul class="list-disc list-inside text-base font-light">
-      <li>Street Body - Prise de muscle sans matériel</li>
-      <li>Spécial Perte de Poids</li>
-      <li>Calisthenic Débutant</li>
-    </ul>
-  </div>
-</section>
+<body class="bg-beige text-noir font-body">
 
-<section class="grid grid-cols-1 md:grid-cols-3 gap-8 p-10">
-    <div class="bg-[#F6F2ED] shadow-lg rounded-2xl overflow-hidden">
-        <img src="/assets/logo.jpeg" alt="Mission">
+  <!-- Header -->
+ 
+  <header class="w-full font-body bg-beige border-b border-noir/70 sticky top-0 z-50">
+     <!-- Wrapper principal, sans padding horizontal pour coller au bord -->
+     <div class="flex items-center justify-between py-4">
+   
+       <!-- LOGO -->
+       <a href="../index.html" class="flex-shrink-0 pl-8">
+         <img src="../assets/logo.svg"
+              alt="Logo"
+              class="h-15 w-20 object-cover"/>
+       </a>
+   
+       <!-- NAV DESKTOP (centrée) -->
+       <nav
+         id="desktop-menu"
+         class="hidden md:flex flex-1 justify-center space-x-14 text-xl">
+         <a href="../index.html" class="hover:text-orange hover:scale-110 transition-transform duration-300 px-4">Accueil</a>
+         <a href="./programmes.html" class="hover:text-orange hover:scale-110 transition-transform duration-300 px-4">Programmes</a>
+         <a href="./a-propos.html" class="hover:text-orange hover:scale-110 transition-transform duration-300 px-4">À-propos</a>
+         <a href="./contact.html" class="hover:text-orange hover:scale-110 transition-transform duration-300 px-4">Contact</a>
+       </nav>
+ 
+       <!-- BOUTON & BURGER -->
+       <div class="flex items-center">
+         <!-- Bouton desktop -->
+         <div class="hidden md:block flex-shrink-0 pr-8">
+           <a href="./réservation.html"
+              class="bg-orange text-white font-title text-xl uppercase px-4 py-3 rounded hover:bg-maya hover:scale-110 transition">
+             Réserve ta séance
+           </a>
+         </div>
+   
+         <!-- Burger mobile -->
+         <button
+           id="burger-btn"
+           class="md:hidden flex-shrink-0 pr-4 text-noir focus:outline-none"
+         >
+           <!-- Ton SVG ici -->
+           <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                   d="M4 6h16M4 12h16m-7 6h7" />
+           </svg>
+         </button>
+       </div>
+   
+     </div>
+ 
+       <!-- MENU MOBILE (absolu, full-width, caché par défaut) -->
+     <nav
+       id="mobile-menu"
+       class="absolute top-full left-0 right-0 hidden bg-beige md:hidden shadow-md">
+         <a href="../index.html" class="block px-4 py-3 font-semibold">Accueil</a>
+         <a href="./programmes.html" class="block px-4 py-3 font-semibold">Programmes</a>
+         <a href="./a-propos.html" class="block px-4 py-3 font-semibold">À-propos</a>
+         <a href="./contact.html" class="block px-4 py-3 font-semibold">Contact</a>
+         <a href="./réservation.html" class="block mx-4 my-3 bg-orange text-white font-title uppercase text-center py-3 rounded hover:bg-maya">
+         Réserve ta séance
+         </a>
+     </nav>
+ 
+   <script>
+     const burgerBtn = document.getElementById('burger-btn');
+     const mobileMenu = document.getElementById('mobile-menu');
+     burgerBtn.addEventListener('click', () => {
+       mobileMenu.classList.toggle('hidden');
+     });
+   </script>
+   </header>
+<main>
+  <!-- Section présentation coach -->
+  <section class="flex flex-col md:flex-row items-center gap-10 py-36 px-6  md:px-20">
+    <img src="../assets/man-2604149_1280.jpg" alt="Coach" class="w-11/12  rounded-lg">
+    <div class="space-y-4 text-center md:text-left md:ml-8">
+      <h1 class="font-title text-4xl md:text-5xl uppercase">Qui suis-je ?</h1>
+      <p class="text-base font-light">
+        Je propose des programmes d'entraînement pour tous les niveaux : perte de poids, prise de masse,
+        remise en forme et performance sportive. Je m'engage à accompagner chaque client de manière personnalisée,
+        quel que soit son profil.
+      </p>
+      <p class="text-base font-light">
+        Mes coachings sont disponibles en ligne, accessibles à tous, où que vous soyez. Mes packs incluent :
+      </p>
+      <ul class="list-disc list-inside text-base font-light text-left">
+        <li>Street Body - Prise de muscle sans matériel</li>
+        <li>Spécial Perte de Poids</li>
+        <li>Calisthenic Débutant</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Section mission / vision / valeurs -->
+  <section class="grid grid-cols-1 md:grid-cols-3 gap-10 py-20 px-6 md:px-20">
+    <div class="shadow-lg rounded-lg overflow-hidden">
+      <img src="../assets/woman-2260736_1280.jpg" alt="Mission" class="w-full h-auto">
       <div class="p-6">
-        <h2 class="bebas text-3xl uppercase mb-2">Ma mission</h2>
-        <p class="text-base font-light">Offrir un accompagnement sportif de qualité pour les débutants, confirmés, ados, femmes post-partum et seniors.</p>
+        <h2 class="font-title text-3xl uppercase mb-2">Ma mission</h2>
+        <p class="text-base font-light">
+          Offrir un accompagnement sportif de qualité pour les débutants, confirmés, ados, femmes post-partum et seniors.
+        </p>
       </div>
     </div>
 
-    <div class="bg-[#F6F2ED] shadow-lg rounded-2xl overflow-hidden">
-        <img src="/assets/logo.jpeg" alt="Vision">
-        <div class="p-6">
-          <h2 class="bebas text-3xl uppercase mb-2">Ma vision</h2>
-          <p class="text-base font-light">Rendre le sport accessible à tous, promouvoir la santé et le bien-être à travers des programmes adaptés et motivants.</p>
-        </div>
+    <div class="shadow-lg rounded-2xl overflow-hidden">
+      <img src="../assets/pexels-kampus-6922127.jpg" alt="Vision" class="w-full h-auto">
+      <div class="p-6">
+        <h2 class="font-title text-3xl uppercase mb-2">Ma vision</h2>
+        <p class="text-base font-light">
+          Rendre le sport accessible à tous, promouvoir la santé et le bien-être à travers des programmes adaptés et motivants.
+        </p>
       </div>
+    </div>
 
-      <div class="bg-[#F6F2ED] shadow-lg rounded-2xl overflow-hidden">
-        <img src="/assets/logo.jpeg" alt="Valeurs">
-        <div class="p-6">
-          <h2 class="bebas text-3xl uppercase mb-2">Mes valeurs</h2>
-          <p class="text-base font-light">Bienveillance, excellence, accessibilité et innovation pour aider chacun à atteindre ses objectifs.</p>
-        </div>
+    <div class="shadow-lg rounded-lg overflow-hidden">
+      <img src="../assets/sports-2262083_1280.jpg" alt="Valeurs" class="w-full h-auto">
+      <div class="p-6">
+        <h2 class="font-title text-3xl uppercase mb-2">Mes valeurs</h2>
+        <p class="text-base font-light">
+          Bienveillance, excellence, accessibilité et innovation pour aider chacun à atteindre ses objectifs.
+        </p>
       </div>
-    </section>
-  </main>
+    </div>
+  </section>
+</main>
+
 
   <footer class="bg-noir text-white pt-12 pb-6 mt-20">
     <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-8 text-sm">
   
       <!-- Bloc 1 -->
       <div>
-        <img src="./brief-pdc-groupe-3/assets/pdc-logo.png" alt="Logo" class="h-40 w-40 object-cover mb-4">
+        <img src="../assets/logo-onlypdc-white.svg" alt="Logo" class="h-40 w-40 object-cover mb-4">
       </div>
   
           <!-- Bloc 2 : Navigation -->
   <div>
     <h4 class="font-title text-lg uppercase text-orange mb-4">Navigation</h4>
     <ul class="space-y-2 text-gray-400">
-      <li><a href="#" class="hover:text-orange">Programmes</a></li>
-      <li><a href="#" class="hover:text-orange">Réservation</a></li>
-      <li><a href="#" class="hover:text-orange">À propos</a></li>
+      <li><a href="./programmes.html" class="hover:text-orange">Programmes</a></li>
+      <li><a href="./réservation.html" class="hover:text-orange">Réservation</a></li>
+      <li><a href="./a-propos.html" class="hover:text-orange">À propos</a></li>
     </ul>
   </div>
 
@@ -93,9 +176,9 @@
   <div>
     <h4 class="font-title text-lg uppercase text-orange mb-4">Suis-moi</h4>
     <div class="flex space-x-4 text-gray-400 text-xl">
-      <a href="#" class="hover:text-orange"><i class="fa-brands fa-tiktok"></i></a>
-      <a href="#" class="hover:text-orange"><i class="fa-brands fa-instagram"></i></a>
-      <a href="#" class="hover:text-orange"><i class="fa-brands fa-youtube"></i></a>
+      <a href="https://www.tiktok.com/@onlypoidsducorp" class="hover:text-orange"><i class="fa-brands fa-tiktok"></i></a>
+      <a href="https://www.instagram.com/" class="hover:text-orange"><i class="fa-brands fa-instagram"></i></a>
+      <a href="https://www.youtube.com/" class="hover:text-orange"><i class="fa-brands fa-youtube"></i></a>
     </div>
     <p class="text-gray-400 mt-4">Email : onlypoidsducorps@gmail.com</p>
   </div>
@@ -103,8 +186,8 @@
       <div>
         <h4 class="font-title text-lg uppercase text-orange mb-4">Liens utiles</h4>
         <ul class="space-y-2 text-gray-400">
-          <li><a href="#" class="hover:text-orange">Contact</a></li>
-          <li><a href="#" class="hover:text-orange">FAQ</a></li>
+          <li><a href="./contact.html" class="hover:text-orange">Contact</a></li>
+          <li><a href="./faq.html" class="hover:text-orange">FAQ</a></li>
         </ul>
       </div>
     </div>
