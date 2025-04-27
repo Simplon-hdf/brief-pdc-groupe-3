@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FAQ</title>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;600&display=swap" rel="stylesheet">
+  <link rel="icon" href="../assets/favicon.ico" sizes="any">
+  <link rel="icon" href="../assets/logo.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="../assets/logo.svg">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            orange: '#F26A1B',
+            noir: '#1A1A1A',
+            beige: '#F6F2ED',
+            maya: '#60BFFF'
+          },
+          fontFamily: {
+            title: ['"Bebas Neue"', 'sans-serif'],
+            body: ['Inter', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+  <script src="https://kit.fontawesome.com/726db68cd1.js" crossorigin="anonymous"></script>
+  
+</head>
+
+<body class="bg-beige text-noir font-body">
+
+  <!-- Header -->
+ 
+  <header class="w-full font-body bg-beige border-b border-noir/70 sticky top-0 z-50">
+     <!-- Wrapper principal, sans padding horizontal pour coller au bord -->
+     <div class="flex items-center justify-between py-4">
+   
+       <!-- LOGO -->
+       <a href="../index.html" class="flex-shrink-0 pl-8">
+         <img src="../assets/logo.svg"
+              alt="Logo"
+              class="h-15 w-20 object-cover"/>
+       </a>
+   
+       <!-- NAV DESKTOP (centrée) -->
+       <nav
+         id="desktop-menu"
+         class="hidden md:flex flex-1 justify-center space-x-14 text-xl">
+         <a href="../index.html" class="hover:text-orange hover:scale-110 transition-transform duration-300 px-4">Accueil</a>
+         <a href="./programmes.html" class="hover:text-orange hover:scale-110 transition-transform duration-300 px-4">Programmes</a>
+         <a href="./a-propos.html" class="hover:text-orange hover:scale-110 transition-transform duration-300 px-4">À-propos</a>
+         <a href="./contact.html" class="hover:text-orange hover:scale-110 transition-transform duration-300 px-4">Contact</a>
+       </nav>
+ 
+       <!-- BOUTON & BURGER -->
+       <div class="flex items-center">
+         <!-- Bouton desktop -->
+         <div class="hidden md:block flex-shrink-0 pr-8">
+           <a href="./reservation.html"
+              class="bg-orange text-white font-title text-xl uppercase px-4 py-3 rounded hover:bg-maya hover:scale-110 transition">
+             Réserve ta séance
+           </a>
+         </div>
+   
+         <!-- Burger mobile -->
+         <button
+           id="burger-btn"
+           class="md:hidden flex-shrink-0 pr-4 text-noir focus:outline-none"
+         >
+           <!-- Ton SVG ici -->
+           <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                   d="M4 6h16M4 12h16m-7 6h7" />
+           </svg>
+         </button>
+       </div>
+   
+     </div>
+ 
+       <!-- MENU MOBILE (absolu, full-width, caché par défaut) -->
+     <nav
+       id="mobile-menu"
+       class="absolute top-full left-0 right-0 hidden bg-beige md:hidden shadow-md">
+         <a href="../index.html" class="block px-4 py-3 font-semibold">Accueil</a>
+         <a href="./programmes.html" class="block px-4 py-3 font-semibold">Programmes</a>
+         <a href="./a-propos.html" class="block px-4 py-3 font-semibold">À-propos</a>
+         <a href="./contact.html" class="block px-4 py-3 font-semibold">Contact</a>
+         <a href="./reservation.html" class="block mx-4 my-3 bg-orange text-white font-title uppercase text-center py-3 rounded hover:bg-maya">
+         Réserve ta séance
+         </a>
+     </nav>
+ 
+    <script>
+     const burgerBtn = document.getElementById('burger-btn');
+     const mobileMenu = document.getElementById('mobile-menu');
+     burgerBtn.addEventListener('click', () => {
+       mobileMenu.classList.toggle('hidden');
+     });
+    </script>
+  </header>
+
+  <section class="px-4 sm:px-6 py-10 max-w-4xl mx-auto flex justify-center my-20">
+
+    <h1 class="font-title text-5xl uppercase">Foire aux questions</h1>
+  </section>
+
+  <div class="w-full px-4 sm:px-6 mb-32">
+    <div class="max-w-4xl mx-auto space-y-4">
+      <div class="bg-white rounded-xl shadow">
+        <button class="w-full text-left p-6 font-title text-3xl text-orange focus:outline-none flex justify-between items-center" onclick="toggleFAQ(this)">
+          <span>Comment fonctionne mon coaching en ligne ?</span>
+          <svg class="w-6 h-6 transition-transform duration-300" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+        </button>
+        <div class="px-6 pb-4 hidden">
+          <p class="text-base font-light">Je t'accompagne à distance via des appels vidéo, des messages personnalisés et des programmes adaptés à tes objectifs personnels.</p>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-xl shadow">
+        <button class="w-full text-left p-6 font-title text-3xl text-orange focus:outline-none flex justify-between items-center" onclick="toggleFAQ(this)">
+          <span>Quels types de programmes est-ce que je propose ?</span>
+          <svg class="w-6 h-6 transition-transform duration-300" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+        </button>
+        <div class="px-6 pb-4 hidden">
+          <p class="text-base font-light">Je propose des programmes pour perdre du poids, prendre de la masse, se remettre en forme, améliorer sa santé ou booster sa performance sportive.</p>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-xl shadow">
+        <button class="w-full text-left p-6 font-title text-3xl text-orange focus:outline-none flex justify-between items-center" onclick="toggleFAQ(this)">
+          <span>À qui s’adresse mon coaching ?</span>
+          <svg class="w-6 h-6 transition-transform duration-300" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+        </button>
+        <div class="px-6 pb-4 hidden">
+          <p class="text-base font-light">J'accompagne aussi bien les débutants que les sportifs confirmés, les ados, les personnes âgées, ou encore les femmes en post-partum. Chacun a un programme sur mesure.</p>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-xl shadow">
+        <button class="w-full text-left p-6 font-title text-3xl text-orange focus:outline-none flex justify-between items-center" onclick="toggleFAQ(this)">
+          <span>Quel programme est adapté si je veux perdre du poids ?</span>
+          <svg class="w-6 h-6 transition-transform duration-300" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+        </button>
+        <div class="px-6 pb-4 hidden">
+          <p class="text-base font-light">Le Pack Spécial Perte de Poids est fait pour toi : il combine cardio, gainage et courses à pied pour maximiser ta dépense énergétique et t’aider à atteindre ton objectif.</p>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-xl shadow">
+        <button class="w-full text-left p-6 font-title text-3xl text-orange focus:outline-none flex justify-between items-center" onclick="toggleFAQ(this)">
+          <span>Je suis très mince (skinny), quel programme choisir ?</span>
+          <svg class="w-6 h-6 transition-transform duration-300" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+        </button>
+        <div class="px-6 pb-4 hidden">
+          <p class="text-base font-light">Le Pack "Street Body" est parfait pour toi. Il t’aidera à prendre du muscle avec des exercices au poids du corps comme différents types de pompes (diamant, normale, supination...)</p>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-xl shadow">
+        <button class="w-full text-left p-6 font-title text-3xl text-orange focus:outline-none flex justify-between items-center" onclick="toggleFAQ(this)">
+          <span>Est-ce que je peux suivre ton programme si je suis débutant en calisthenics ?</span>
+          <svg class="w-6 h-6 transition-transform duration-300" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+        </button>
+        <div class="px-6 pb-4 hidden">
+          <p class="text-base font-light">Oui ! Le Pack Calisthenic Débutant est spécialement conçu pour t'apprendre les premières figures comme le Frogstand, le Elbow Lever ou encore le L-sit, étape par étape.</p>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-xl shadow">
+        <button class="w-full text-left p-6 font-title text-3xl text-orange focus:outline-none flex justify-between items-center" onclick="toggleFAQ(this)">
+          <span>Ai-je besoin de matériel pour m’entraîner avec toi ?</span>
+          <svg class="w-6 h-6 transition-transform duration-300" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+        </button>
+        <div class="px-6 pb-4 hidden">
+          <p class="text-base font-light">Non, la plupart des exercices sont prévus au poids du corps. Le Pack "Street Body" est conçu sans matériel pour que tu puisses progresser n’importe où, même à la maison.</p>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+
+  <script>
+    function toggleFAQ(button) {
+      const content = button.nextElementSibling;
+      const icon = button.querySelector('svg');
+      content.classList.toggle('hidden');
+      icon.classList.toggle('rotate-180');
+    }
+  </script>
+  
+  <footer class="bg-noir text-white pt-12 pb-6 mt-20">
+    <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-8 text-sm">
+  
+      <!-- Bloc 1 -->
+      <div>
+        <img src="../assets/logo-onlypdc-white.svg" alt="Logo" class="h-40 w-40 object-cover mb-4">
+      </div>
+  
+          <!-- Bloc 2 : Navigation -->
+  <div>
+    <h4 class="font-title text-lg uppercase text-orange mb-4">Navigation</h4>
+    <ul class="space-y-2 text-gray-400">
+      <li><a href="./programmes.html" class="hover:text-orange">Programmes</a></li>
+      <li><a href="./reservation.html" class="hover:text-orange">Réservation</a></li>
+      <li><a href="./a-propos.html" class="hover:text-orange">À propos</a></li>
+    </ul>
+  </div>
+
+  <!-- Bloc 3 : Réseaux sociaux -->
+  <div>
+    <h4 class="font-title text-lg uppercase text-orange mb-4">Suis-moi</h4>
+    <div class="flex space-x-4 text-gray-400 text-xl">
+      <a href="https://www.tiktok.com/@onlypoidsducorp" class="hover:text-orange"><i class="fa-brands fa-tiktok"></i></a>
+      <a href="https://www.instagram.com/" class="hover:text-orange"><i class="fa-brands fa-instagram"></i></a>
+      <a href="https://www.youtube.com/" class="hover:text-orange"><i class="fa-brands fa-youtube"></i></a>
+    </div>
+    <p class="text-gray-400 mt-4">Email : onlypoidsducorps@gmail.com</p>
+  </div>
+      <!-- Bloc 4 : Liens utiles -->
+      <div>
+        <h4 class="font-title text-lg uppercase text-orange mb-4">Liens utiles</h4>
+        <ul class="space-y-2 text-gray-400">
+          <li><a href="./contact.html" class="hover:text-orange">Contact</a></li>
+          <li><a href="./faq.html" class="hover:text-orange">FAQ</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="mt-8 border-t border-gray-700 pt-4 text-xs text-gray-500">
+      <div class="flex flex-col sm:flex-row justify-between items-center gap-4 text-center sm:text-left px-4">
+  
+        <p>&copy; 2025 OnlyPoidsDuCorps. Tous droits réservés.</p>
+  
+        <ul class="flex flex-wrap justify-center sm:justify-end gap-4">
+          <li><a href="#" class="hover:text-orange">CGV</a></li>
+          <li><a href="#" class="hover:text-orange">Politique de confidentialité</a></li>
+          <li><a href="#" class="hover:text-orange">Mentions légales</a></li>
+        </ul>
+  
+      </div>
+  </footer>
+
+  </body>
+  </html>
