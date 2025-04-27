@@ -142,20 +142,32 @@
   </section>
 
   <!-- Section Réservations -->
-  <section id="reservations" class="py-12">
-    <div class="max-w-4xl mx-auto px-4 mt-10">
-      <h2 class="text-4xl font-title text-noir mb-6 text-center">Choisissez votre créneau</h2>
+<section id="reservations" class="py-12 bg-beige">
+  <!-- 1) On passe de max-w-4xl à max-w-[1000px] -->
+  <div class="w-full max-w-[1000px] mx-auto px-4 mt-10">
+    <h2 class="text-4xl font-title text-noir mb-6 text-center">
+      Choisissez votre créneau
+    </h2>
 
-      <!-- Calendly -->
+    <!-- 2) On centre le widget avec flex -->
+    <div class="flex justify-center">
       <div
-        class="calendly-inline-widget w-[1000px] h-[700px] rounded-lg shadow-lg overflow-hidden justify-self-center"
-        data-url="https://calendly.com/milan59310/30min?background_color=0a0908&text_color=f2f4f3&primary_color=e46804"&back=1&month=2025-04?hide_event_type_details=1"
-        style="min-width:320px;">
-
+        class="
+          calendly-inline-widget
+          w-full              /* mobile full-width */
+          md:w-[1000px]       /* desktop fixe 1000px */
+          h-[700px]           /* mobile hauteur confortable */
+          sm:h-[700px]        /* sm */
+          md:h-[700px]        /* md+ */
+          rounded-lg shadow-lg overflow-hidden
+        "
+        data-url="https://calendly.com/milan59310/30min?background_color=0a0908&amp;text_color=f2f4f3&amp;primary_color=e46804&amp;hide_event_type_details=1&amp;back=1&amp;month=2025-04"
+        style="min-width:320px;"
+      ></div>
     </div>
+  </div>
+</section>
 
-    </div>
-  </section>
 <footer class="bg-noir text-white pt-12 pb-6 mt-20">
   <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-8 text-sm">
 
