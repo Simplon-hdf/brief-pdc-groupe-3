@@ -127,7 +127,8 @@
 
 
   <!-- Section Avantages -->
-  <section class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-1 text-center text-noir bg-orange p-3 sm:p-5 text-2xl mx-28">
+  <section class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 text-center text-noir bg-orange 
+  p-3 sm:p-5 mx-20 md:mx-28 text-base sm:text-lg md:text-2xl">
     <div>Sans matériel</div>
     <div>Accessible à tous</div>
     <div>Résultats visibles</div>
@@ -135,106 +136,109 @@
   </section>
 
   <!-- Programmes -->
+<section class="mx-auto max-w-7xl text-center px-4 sm:px-6 lg:px-8 py-10">
+  <h2 class="text-2xl sm:text-4xl md:text-5xl lg:text-4xl uppercase font-title font-bold my-16 sm:my-20">
+    Découvre mes Programmes
+  </h2>
+
   <!-- Grille des 3 cartes -->
-  <section class="mx-auto max-w-7xl text-center lg:px-8 py-10  ">
-    <h2 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-5xl uppercase font-title font-bold my-20">Découvre mes Programmes</h2>
-
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-
-      <!-- Card 1: Prise de masse -->
-      <div class="group bg-white rounded-lg shadow-lg overflow-hidden p-6 flex flex-col transform transition duration-500 hover:-translate-y-2 hover:shadow-2xl">
-        <div class="aspect-w-4 aspect-h-3 mb-4 overflow-hidden rounded-md">
-          <img
-            src="./assets/programme-masse-page-programmes.jpg"
-            alt="Programme Prise de masse"
-            class="object-cover w-full h-full transform transition duration-500 group-hover:scale-105"
-          />
-        </div>
-        <!-- Nom et description -->
-        <h3 class="text-xl font-semibold text-noir mb-2">Prise de masse</h3>
-        <p class="text-gray-600 flex-1">
-          Programme intensif : Développez votre force et augmentez votre masse musculaire naturellement.
-        </p>
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+    <!-- Card 1: Prise de masse -->
+    <div class="group bg-white rounded-lg shadow-lg overflow-hidden p-6 flex flex-col transform transition duration-500 hover:-translate-y-2 hover:shadow-2xl">
+      <div class="aspect-w-4 aspect-h-3 mb-4 overflow-hidden rounded-md">
+        <img
+          src="./assets/programme-masse-page-programmes.jpg"
+          alt="Programme Prise de masse"
+          class="object-cover w-full h-full transform transition duration-500 group-hover:scale-105"
+        />
       </div>
-
-
-      <!-- Card 2: Calisthenics débutant -->
-      <div class="group bg-white rounded-lg shadow-lg overflow-hidden p-6 flex flex-col transform transition duration-500 hover:-translate-y-2 hover:shadow-2xl">
-        <div class="aspect-w-4 aspect-h-3 mb-4 overflow-hidden rounded-md">
-          <img
-            src="./assets/programme-calis-page-programmes.jpg"
-            alt="Programme Calisthenics débutant"
-            class="object-cover w-full h-full transform transition duration-500 group-hover:scale-105"
-          />
-        </div>
-        <!-- Nom et description -->
-        <h3 class="text-xl font-semibold text-noir mb-2">Calisthenics débutant</h3>
-        <p class="text-gray-600 flex-1">
-          Programme pas à pas : Apprenez les bases du poids du corps pour améliorer mobilité, force et contrôle musculaire.
-        </p>
-
-      </div>
-
-       <!-- Card 3: Perte de poids -->
-       <div class="group bg-white rounded-lg shadow-lg overflow-hidden p-6 flex flex-col transform transition duration-500 hover:-translate-y-2 hover:shadow-2xl">
-        <div class="aspect-w-4 aspect-h-3 mb-4 overflow-hidden rounded-md">
-          <img
-            src="./assets/programme-perte-page-programmes.jpg"
-            alt="Programme Perte de poids"
-            class="object-cover w-full h-full transform transition duration-500 group-hover:scale-105"
-          />
-        </div>
-        <!-- Nom et description -->
-        <h3 class="text-xl font-semibold text-noir mb-2">Perte de poids</h3>
-        <p class="text-gray-600 flex-1">
-          Programme détaillé : Plan complet pour brûler les graisses, tonifier votre silhouette et gagner en endurance.
-        </p>
-        
-      </div>
+      <h3 class="text-lg sm:text-xl md:text-2xl font-semibold text-noir mb-2">Prise de masse</h3>
+      <p class="text-gray-600 text-sm sm:text-base flex-1">
+        Programme intensif : Développez votre force et augmentez votre masse musculaire naturellement.
+      </p>
     </div>
 
-    <div class="w-full justify-center mt-10">
-      <button onclick="window.location.href='./pages/programmes.html'"
-      class="mt-6 my-10 bg-orange  text-white px-4 sm:px-6 py-3 sm:text-xl md:text-2xl uppercase font-title rounded hover:bg-maya transition hover:scale-110 duration-300">
-        Voir mes programmes
-      </button>
-    </div> 
-
-  </section>
-
-  <!-- Témoignages -->
-
-  <section class="text-center mb-1">
-    <h2 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-5xl uppercase font-title font-bold my-16">Ils ont transformé leur corps</h2>
-    
-    <div class="grid md:grid-cols-3 gap-10 max-w-7xl mx-auto">
-      
-      <!-- Témoignage 1 -->
-      <div class="bg-white p-8 rounded-xl shadow-lg flex flex-col items-center text-center">
-        <img src="./assets/pexels-heitorverdifotos-2169434.jpg" alt="Julie" class="w-20 h-20 rounded-full mb-4 object-cover">
-        <div class="text-yellow-400 text-xl mb-2">★★★★☆</div>
-        <p class="text-gray-700 italic mb-4">"Super coach, résultats dès 3 semaines avec le pack perte de poids...  Il sait comment motiver même les jours difficiles. Très professionnel et à l’écoute."</p>
-        <span class="font-semibold text-[#668586]">Julie, 28 ans</span>
+    <!-- Card 2: Calisthenics débutant -->
+    <div class="group bg-white rounded-lg shadow-lg overflow-hidden p-6 flex flex-col transform transition duration-500 hover:-translate-y-2 hover:shadow-2xl">
+      <div class="aspect-w-4 aspect-h-3 mb-4 overflow-hidden rounded-md">
+        <img
+          src="./assets/programme-calis-page-programmes.jpg"
+          alt="Programme Calisthenics débutant"
+          class="object-cover w-full h-full transform transition duration-500 group-hover:scale-105"
+        />
       </div>
-  
-      <!-- Témoignage 2 -->
-      <div class="bg-white p-8 rounded-xl shadow-lg flex flex-col items-center text-center">
-        <img src="./assets/pexels-maide-arslan-128712163-31750455.jpg" alt="Alex" class="w-20 h-20 rounded-full mb-4 object-cover">
-        <div class="text-yellow-400 text-xl mb-2">★★★★☆</div>
-        <p class="text-gray-700 italic mb-4">"J'ai retrouvé ma motivation et ma forme ! avec un programmes faciles à suivre à la maison. J’ai commencé avec le Pack Perte de Poids et j’ai perdu 4kg en 1 mois."</p>
-        <span class="font-semibold text-[#668586]">Alex, 26 ans</span>
-      </div>
-  
-      <!-- Témoignage 3 -->
-      <div class="bg-white p-8 rounded-xl shadow-lg flex flex-col items-center text-center">
-        <img src="./assets/pexels-vazhnik-7562313.jpg" alt="Ali" class="w-20 h-20 rounded-full mb-4 object-cover">
-        <div class="text-yellow-400 text-xl mb-2">★★★★★</div>
-        <p class="text-gray-700 italic mb-4">"Un vrai suivi personnalisé pour ma prise de masse avec des résultats visibles et une super ambiance. Je recommande à 100% !"</p>
-        <span class="font-semibold text-[#668586]">Ali, 29 ans</span>
-      </div>
-  
+      <h3 class="text-lg sm:text-xl md:text-2xl font-semibold text-noir mb-2">Calisthenics débutant</h3>
+      <p class="text-gray-600 text-sm sm:text-base flex-1">
+        Programme pas à pas : Apprenez les bases du poids du corps pour améliorer mobilité, force et contrôle musculaire.
+      </p>
     </div>
-  </section>
+
+    <!-- Card 3: Perte de poids -->
+    <div class="group bg-white rounded-lg shadow-lg overflow-hidden p-6 flex flex-col transform transition duration-500 hover:-translate-y-2 hover:shadow-2xl">
+      <div class="aspect-w-4 aspect-h-3 mb-4 overflow-hidden rounded-md">
+        <img
+          src="./assets/programme-perte-page-programmes.jpg"
+          alt="Programme Perte de poids"
+          class="object-cover w-full h-full transform transition duration-500 group-hover:scale-105"
+        />
+      </div>
+      <h3 class="text-lg sm:text-xl md:text-2xl font-semibold text-noir mb-2">Perte de poids</h3>
+      <p class="text-gray-600 text-sm sm:text-base flex-1">
+        Programme détaillé : Plan complet pour brûler les graisses, tonifier votre silhouette et gagner en endurance.
+      </p>
+    </div>
+  </div>
+
+  <!-- Bouton -->
+  <div class="w-full flex justify-center mt-10">
+    <button
+      onclick="window.location.href='./pages/programmes.html'"
+      class="mt-6 mb-14 bg-orange text-white px-6 py-3 text-base sm:text-xl md:text-2xl uppercase font-title rounded hover:bg-maya transition hover:scale-110 duration-300"
+    >
+      Voir mes programmes
+    </button>
+  </div>
+</section>
+
+<!-- Témoignages -->
+<section class="text-center mb-8 px-4">
+  <h2 class="text-2xl sm:text-4xl md:text-5xl lg:text-4xl uppercase font-title font-bold my-16">
+    Ils ont transformé leur corps
+  </h2>
+
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-10 max-w-7xl mx-auto">
+    <!-- Témoignage 1 -->
+    <div class="bg-white p-6 sm:p-8 rounded-xl shadow-lg flex flex-col items-center text-center">
+      <img src="./assets/pexels-heitorverdifotos-2169434.jpg" alt="Julie" class="w-20 h-20 rounded-full mb-4 object-cover">
+      <div class="text-yellow-400 text-lg sm:text-xl mb-2">★★★★☆</div>
+      <p class="text-gray-700 italic text-sm sm:text-base mb-4">
+        "Super coach, résultats dès 3 semaines avec le pack perte de poids... Il sait comment motiver même les jours difficiles. Très professionnel et à l’écoute."
+      </p>
+      <span class="font-semibold text-[#668586] text-sm sm:text-base">Julie, 28 ans</span>
+    </div>
+
+    <!-- Témoignage 2 -->
+    <div class="bg-white p-6 sm:p-8 rounded-xl shadow-lg flex flex-col items-center text-center">
+      <img src="./assets/pexels-maide-arslan-128712163-31750455.jpg" alt="Alex" class="w-20 h-20 rounded-full mb-4 object-cover">
+      <div class="text-yellow-400 text-lg sm:text-xl mb-2">★★★★☆</div>
+      <p class="text-gray-700 italic text-sm sm:text-base mb-4">
+        "J'ai retrouvé ma motivation et ma forme ! avec un programmes faciles à suivre à la maison. J’ai commencé avec le Pack Perte de Poids et j’ai perdu 4kg en 1 mois."
+      </p>
+      <span class="font-semibold text-[#668586] text-sm sm:text-base">Alex, 26 ans</span>
+    </div>
+
+    <!-- Témoignage 3 -->
+    <div class="bg-white p-6 sm:p-8 rounded-xl shadow-lg flex flex-col items-center text-center">
+      <img src="./assets/pexels-vazhnik-7562313.jpg" alt="Ali" class="w-20 h-20 rounded-full mb-4 object-cover">
+      <div class="text-yellow-400 text-lg sm:text-xl mb-2">★★★★★</div>
+      <p class="text-gray-700 italic text-sm sm:text-base mb-4">
+        "Un vrai suivi personnalisé pour ma prise de masse avec des résultats visibles et une super ambiance. Je recommande à 100% !"
+      </p>
+      <span class="font-semibold text-[#668586] text-sm sm:text-base">Ali, 29 ans</span>
+    </div>
+  </div>
+</section>
+
 
   <!-- Call to action -->
   <section class="text-center my-20">
